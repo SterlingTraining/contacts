@@ -1,0 +1,85 @@
+{
+	"mydata": [
+		{
+			"address": "IRVING, TX",
+			"contactId": 1,
+			"contactName": "SAMSUNG",
+			"dob": "1997-03-06 00:00:00.0",
+			"email": "flower@gmail.com",
+			"phone1": "877.911.9212",
+			"phone2": "809.908.9900"
+		},
+		{
+			"address": "MEQUITE, TX",
+			"contactId": 2,
+			"contactName": "APPLE",
+			"dob": "1967-08-01 00:00:00.0",
+			"email": "APPLE@MICROSOFT.COM",
+			"phone1": "675.890.2234",
+			"phone2": "675.890.2234"
+		},
+		{
+			"address": "DIMPLE, TX",
+			"contactId": 3,
+			"contactName": "ANDROID",
+			"dob": "1980-01-15 00:00:00.0",
+			"email": "DIMPLE@APPLE.COM",
+			"phone1": "398.908.8790",
+			"phone2": "398.908.8790"
+		},
+		{
+			"address": "AUSTIN, TX",
+			"contactId": 4,
+			"contactName": "LG",
+			"dob": "1947-06-06 00:00:00.0",
+			"email": "LG@gmail.com",
+			"phone1": "708.901.6757",
+			"phone2": "708.901.6757"
+		},
+		{
+			"address": "MOUNTAIN, TX",
+			"contactId": 5,
+			"contactName": "FRONTIER",
+			"dob": "1987-10-04 00:00:00.0",
+			"email": "FRT.POST@gmail.com",
+			"phone1": "677.981.1212",
+			"phone2": "677.981.1212"
+		},
+		{
+			"address": "FLOWER MOUND, TX",
+			"contactId": 6,
+			"contactName": "Papa John",
+			"dob": "1976-02-15 00:00:00.0",
+			"email": "flower@gmail.com",
+			"phone1": "877.901.9212",
+			"phone2": "877.901.9212"
+		},
+		{
+			"address": "Plano Texas",
+			"contactId": 7,
+			"contactName": "Onida",
+			"dob": "1980-11-10 00:00:00.0",
+			"email": "june@may.com",
+			"phone1": "786.908.2234",
+			"phone2": "786.908.2234"
+		},
+		{
+			"address": "LEWISVILLE, TX",
+			"contactId": 8,
+			"contactName": "Papa John",
+			"dob": "1967-05-21 00:00:00.0",
+			"email": "PAPA@gmail.com",
+			"phone1": "877.011.9212",
+			"phone2": "877.011.9212"
+		},
+		{
+			"address": "DALLAS, TX",
+			"contactId": 9,
+			"contactName": "ATT",
+			"dob": "1980-07-28 00:00:00.0",
+			"email": "june@may.com",
+			"phone1": "786.908.2234",
+			"phone2": "786.908.2234"
+		}
+	]
+}
