@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sterling.contacts.mapper.AddressBookMapper">
+	<cache />
+
+	<insert id="insertContact" useGeneratedKeys="true" keyProperty="contactId" parameterType="ContactVO">
+		insert into contacts(name,address,email,mobile,phone,dob)
+		values (#{contactName, mode=IN, jdbcType=VARCHAR},
+		#{address, mode=IN, jdbcType=VARCHAR},
+		#{email, mode=IN, jdbcType=VARCHAR},
+		#{mobilePhone, mode=IN, jdbcType=VARCHAR},
+		#{homePhone, mode=IN, jdbcType=VARCHAR},
+		#{dob, mode=IN, jdbcType=DATE})
+	</insert>
+
+	<delete id="removeContact">
+		delete from CONTACTS where id = #{contactId}
+	</delete>
+
+	<update id="updateContact" parameterType="ContactVO">
+		update CONTACT set 
+		name = #{contactName},
+		email = #{email},
+		mobile = #{mobilePhone},
+		phone = #{homePhone},
+		address = #{address},
+		dob = #{dob}
+		
+		where id = #{contactId}
+	</update>
+	
+	<select id="getContactList" resultType="ContactVO">
+		SELECT ID contactId,NAME contactName,ADDRESS,DOB,MOBILE mobilePhone, PHONE homePhone, EMAIL FROM CONTACTS
+	</select>
+		
+	<select id="getContactByNameList" resultType="ContactVO">
+		SELECT ID contactId,NAME contactName,ADDRESS,DOB,MOBILE mobilePhone, PHONE homePhone, EMAIL FROM CONTACTS
+		<where>
+			<if test="contactName != null">
+    			NAME LIKE #{contactName}
+  			</if>
+		</where>
+		
+	</select>
+	
+	<select id="search" parameterType="ContactVO" resultType="ContactVO">
+		SELECT ID contactId,NAME contactName,ADDRESS,DOB,MOBILE mobilePhone, PHONE homePhone, EMAIL FROM CONTACTS
+		WHERE 
+		<if test="contactName != null">
+    		NAME LIKE #{contactName}
+  		</if>
+  		<if test="dob != null">
+    		AND dob = #{dob}
+  		</if>
+	</select>
+
+</mapper>

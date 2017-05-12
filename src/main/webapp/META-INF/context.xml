@@ -1,0 +1,18 @@
+<Context>
+     <Resource name="jdbc/TestDB"
+      		global="jdbc/TestDB" 
+                auth="Container"
+                type="javax.sql.DataSource"
+                username="root"
+                password="2290"
+                url="jdbc:mysql://127.0.0.1:3306/testdb"
+                driverClassName="com.mysql.jdbc.Driver"
+                initialSize="20"
+                maxWaitMillis="15000"
+                maxTotal="75"
+                maxIdle="20"
+                maxAge="7200000"
+                testOnBorrow="true"
+                validationQuery="select 1"
+                />
+</Context>
