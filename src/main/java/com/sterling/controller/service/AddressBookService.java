@@ -36,7 +36,7 @@ public class AddressBookService {
 	public List<ContactVO> getContactByName(ContactVO contact){
 		//List<ContactVO> aList = addressBookMapper.getContactByNameList();
 		List<ContactVO> aList = addressBookMapper.getContactByNameList(contact);
-		logger.info("ContactVO size " + aList.size());
+		logger.info("ContactVO List size... " + aList.size());
 		return aList ;
 	}
 	
